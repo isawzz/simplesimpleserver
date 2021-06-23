@@ -19,7 +19,7 @@ let port = process.env.PORT || 3000;
 server.listen(port,()=>console.log(`listening on ${port}`));
 
 function handleConnection(client){
-	console.log('connected:',client.id);
+	console.log('...connected:',client.id);
 	io.emit('fromServer',{msg:`user ${client.id} joined`});
 }
 function handleDisconnect(client){
