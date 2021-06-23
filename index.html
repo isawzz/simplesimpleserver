@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta http-equiv="Cache-Control" content="max-age: 31536000, no-cache, no-store, must-revalidate" />
+		<title>Socket.IO chat</title>
+		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+		<link rel="stylesheet" href="./index.css" />
+		<script src="./base.js"></script>
+	</head>
+	<body>
+		<div id="dMain">
+			<div id="dTitle">
+				<h1>SERVER</h1>
+				<button onclick="onClickPing()">Ping</button>
+			</div>
+			<div id="dChat">
+				<ul id="messages"></ul>
+				<form id="form" action="">
+					<input id="input" autocomplete="off" />
+					<button>Send</button>
+				</form>
+			</div>
+		</div>
+		<!-- <script src="./styling.js"></script> -->
+
+		<!-- socket.io cloud version -->
+		<!-- <script src="/socket.io/socket.io.js"></script>  -->
+		<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js'></script> -->
+		<!-- socket.io local version -->
+		<script src="./node_modules/socket.io/client-dist/socket.io.js"></script>
+
+		<script src="./start.js"></script>
+	</body>
+</html>
