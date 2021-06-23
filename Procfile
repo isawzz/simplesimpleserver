@@ -1,1 +1,1 @@
-web: node servertest.js
+web: node servecors.js
